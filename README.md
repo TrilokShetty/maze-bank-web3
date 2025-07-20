@@ -4,11 +4,11 @@
 
 Before you start, make sure you have:
 
-- Brave browser (MetaMask works smoother here)  
-- Node.js and npm installed  
-- MetaMask extension added  
-- Two Chrome/Brave profiles, each with its own MetaMask  
-- VS Code or any editor  
+* Brave browser (MetaMask works smoother here)
+* Node.js and npm installed  
+* MetaMask extension added
+* Two Chrome/Brave profiles, each with its own MetaMask
+* VS Code or any editor  
 
 ---
 
