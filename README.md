@@ -1,74 +1,67 @@
----
+# Maze Bank Web3 - Local Setup - (Quick Guide)
 
-## Prerequisites
+## What You Need
 
-Before you start, make sure you have:
+- Brave browser with MetaMask extension
+- Node.js and npm installed
+- Two browser profiles (each with separate MetaMask)
+- Code editor like VS Code
 
-* Brave browser (MetaMask works smoother here)
-* Node.js and npm installed  
-* MetaMask extension added
-* Two Chrome/Brave profiles, each with its own MetaMask
-* VS Code or any editor  
+## Setup Steps
 
----
-
-## Setup Guide
-
-Clone the repo and go inside:
+Clone and install:
 
 ```bash
 git clone https://github.com/TrilokShetty/maze-bank-web3.git
 cd maze-bank-web3
-```
-
-Install dependencies:
-
-```bash
 npm install
 ```
 
-Run local blockchain:
+Start local blockchain (keep this terminal open):
 
 ```bash
 npx hardhat node
 ```
 
-Open MetaMask in both browser profiles. Add a custom network:
+## Configure MetaMask
 
-- **Name**: Localhost Hardhat  
-- **RPC URL**: http://127.0.0.1:8545  
-- **Chain ID**: 31337  
-- **Currency**: ETH  
+In both browser profiles, add this network to MetaMask:
 
-Import 2 different private keys from the terminal output into MetaMask (one per profile).  
-Go to MetaMask > Profile icon > Import Account > Paste private key.
+- **Network Name**: Localhost Hardhat
+- **RPC URL**: http://127.0.0.1:8545
+- **Chain ID**: 31337
+- **Currency Symbol**: ETH
 
-In another terminal tab, deploy the contract:
+Import accounts:
+1. Copy a private key from the terminal
+2. In MetaMask, click profile icon → Import Account
+3. Paste the private key
+4. Use different private keys for each browser profile
+
+## Deploy Contract
+
+Run in new terminal:
 
 ```bash
 npx hardhat run scripts/deploy.js --network localhost
 ```
 
-Copy the contract address it prints.  
-Open `dBankABI.js` and update the contract address there.
+Copy the contract address from the output. Open `dBankABI.js` and replace the old contract address with the new one.
 
-Start the app:
+## Start Application
 
 ```bash
 npm start
 ```
 
----
-
 ## Notes
 
-- Don’t close the `hardhat node` tab — it powers the blockchain.  
-- To reset everything, run:
+- Keep the blockchain terminal running
+- To reset everything: `npx hardhat clean`
+- Use two browser profiles to test transactions between accounts
 
-  ```bash
-  npx hardhat clean
-  ```
+## Common Issues
 
----
-
-That’s it. You’re all set.
+- **App not working**: Check if blockchain terminal is still running
+- **MetaMask issues**: Make sure you're on the localhost network
+- **Contract errors**: Update the contract address in `dBankABI.js`
