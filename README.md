@@ -2,7 +2,8 @@
 
 ## Maze Bank Web3 – Overview
 
-This is a model Dapp (Decentralised App) of a Banking website that is hosted on a blockchain . DBanks are the future of banking as nobody controls them and once the code is deployed to the blockchain it is not possible for anybody to modify or hamper userdata . 
+This is a model Dapp (Decentralized App) of a banking website hosted on a blockchain.  
+dBanks are the future of banking — nobody controls them, and once the code is deployed, it's immutable and user data remains secure.
 
 ---
 
