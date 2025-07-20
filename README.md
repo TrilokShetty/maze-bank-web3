@@ -1,13 +1,13 @@
-# Maze Bank Web3 - Local Setup - (Quick Guide)
+## Maze Bank Web3 - Local Setup - (Quick Guide)
 
-## What You Need
+### What You Need
 
 - Brave browser with MetaMask extension
 - Node.js and npm installed
 - Two browser profiles (each with separate MetaMask)
 - Code editor like VS Code
 
-## Setup Steps
+### Setup Steps
 
 Clone and install:
 
@@ -23,7 +23,7 @@ Start local blockchain (keep this terminal open):
 npx hardhat node
 ```
 
-## Configure MetaMask
+### Configure MetaMask
 
 In both browser profiles, add this network to MetaMask:
 
@@ -38,7 +38,7 @@ Import accounts:
 3. Paste the private key
 4. Use different private keys for each browser profile
 
-## Deploy Contract
+### Deploy Contract
 
 Run in new terminal:
 
@@ -48,19 +48,19 @@ npx hardhat run scripts/deploy.js --network localhost
 
 Copy the contract address from the output. Open `dBankABI.js` and replace the old contract address with the new one.
 
-## Start Application
+### Start Application
 
 ```bash
 npm start
 ```
 
-## Notes
+### Notes
 
 - Keep the blockchain terminal running
 - To reset everything: `npx hardhat clean`
 - Use two browser profiles to test transactions between accounts
 
-## Common Issues
+### Common Issues
 
 - **App not working**: Check if blockchain terminal is still running
 - **MetaMask issues**: Make sure you're on the localhost network
