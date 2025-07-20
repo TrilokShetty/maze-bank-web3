@@ -1,3 +1,29 @@
+
+
+## Maze Bank Web3 – Overview
+
+This is a model Dapp (Decentralised App) of a Banking website that is hosted on a blockchain . DBanks are the future of banking as nobody controls them and once the code is deployed to the blockchain it is not possible for anybody to modify or hamper userdata . 
+<img width="1919" height="931" alt="image" src="https://github.com/user-attachments/assets/255648df-798a-4080-8c7e-319a9915ae47" />
+
+
+### Tech Stack Used
+
+**Frontend:**
+
+* React.js – For building the user interface
+* MetaMask – For connecting users' crypto wallets ( Signing transaction & Deposits )
+
+**Backend / Blockchain:**
+
+* Solidity – Used to write smart contracts
+* Ethers.js – Connects the frontend to the blockchain
+* Hardhat – Local blockchain used for development and testing
+
+## Why It's the Future of Banking
+
+No banks or middlemen. Only you control your money. It's fast, transparent, and can’t be blocked .
+
+
 ## Maze Bank Web3 - Local Setup - (Quick Guide)
 
 ### What You Need
