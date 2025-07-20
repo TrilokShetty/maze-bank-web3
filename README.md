@@ -12,6 +12,8 @@ dBanks are the future of banking — nobody controls them, and once the code is 
 
 Stats by : https://innowise.com/blog/blockchain-in-banking/
 
+---
+
 ### Tech Stack Used
 
 **Frontend:**
@@ -25,7 +27,7 @@ Stats by : https://innowise.com/blog/blockchain-in-banking/
 * Ethers.js – Connects the frontend to the blockchain
 * Hardhat – Local blockchain used for development and testing
 
-## Why It's the Future of Banking
+### Why It's the Future of Banking
 
 No banks or middlemen. Only you control your money. It's fast, transparent, and can’t be blocked .
 
