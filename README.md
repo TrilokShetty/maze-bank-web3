@@ -3,8 +3,13 @@
 ## Maze Bank Web3 – Overview
 
 This is a model Dapp (Decentralised App) of a Banking website that is hosted on a blockchain . DBanks are the future of banking as nobody controls them and once the code is deployed to the blockchain it is not possible for anybody to modify or hamper userdata . 
-<img width="1919" height="931" alt="image" src="https://github.com/user-attachments/assets/255648df-798a-4080-8c7e-319a9915ae47" />
 
+---
+
+<img width="1919" height="931" alt="image" src="https://github.com/user-attachments/assets/255648df-798a-4080-8c7e-319a9915ae47" />
+<img width="1000" height="546" alt="image" src="https://github.com/user-attachments/assets/896b8a74-20f6-41b2-bb24-e7681231c3c4" />
+
+Stats by : https://innowise.com/blog/blockchain-in-banking/
 
 ### Tech Stack Used
 
@@ -63,6 +68,7 @@ Import accounts:
 2. In MetaMask, click profile icon → Import Account
 3. Paste the private key
 4. Use different private keys for each browser profile
+<img width="1005" height="479" alt="image" src="https://github.com/user-attachments/assets/61523282-9e4a-4c2d-8006-478a0cf84060" />
 
 ### Deploy Contract
 
@@ -74,6 +80,9 @@ npx hardhat run scripts/deploy.js --network localhost
 
 Copy the contract address from the output. Open `dBankABI.js` and replace the old contract address with the new one.
 
+<img width="570" height="51" alt="image" src="https://github.com/user-attachments/assets/5dfffc5e-c113-4fc3-824f-144538d02c14" />
+
+
 ### Start Application
 
 ```bash
@@ -83,7 +92,7 @@ npm start
 ### Notes
 
 - Keep the blockchain terminal running
-- To reset everything: `npx hardhat clean`
+- To reset everything: `npx hardhat clean` (run this everytime you start a blockchain , essentially when you run `npx hardhat node`) 
 - Use two browser profiles to test transactions between accounts
 
 ### Common Issues
@@ -91,3 +100,6 @@ npm start
 - **App not working**: Check if blockchain terminal is still running
 - **MetaMask issues**: Make sure you're on the localhost network
 - **Contract errors**: Update the contract address in `dBankABI.js`
+
+### Contact Me
+trilokshettyin@gmail.com
